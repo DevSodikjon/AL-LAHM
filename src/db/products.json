@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Sifatli mahsulotlar",
+    "description": "Har bir mahsulotimiz mehr va ta’amga to’yingan",
+    "imageUrl": "../../assets/images/meat.png"
+  },
+  {
+    "title": "Yaxshi takliflar",
+    "description": "Qadirli haridorlarimiz uchun eng yaxshisini taklif qilamiz",
+    "imageUrl": "../../assets/images/meat.png"
+  },
+  {
+    "title": "Tez yetkazib berish",
+    "description": "Barcha viloyatlarga yetkazib beramiz",
+    "imageUrl": "../../assets/images/meat.png"
+  }
+]

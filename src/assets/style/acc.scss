@@ -1,0 +1,80 @@
+// Kaisei Opti \\
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@700&display=swap");
+
+// Inter \\
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+.acc {
+  background-image: url("../images/pic.png");
+  background-repeat: no-repeat;
+  background-position: 0px -140px;
+  background-size: contain;
+  &_items {
+    &_title {
+      margin-bottom: 120px;
+      h3 {
+        text-align: center;
+        color: #f49340;
+        font-family: Kaisei Opti;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+
+    .card_box {
+      margin-bottom: 280px;
+      .cardProductsLink {
+        text-decoration: none;
+
+        .swippper {
+          margin-left: 15px;
+          padding-bottom: 30px;
+          .card {
+            width: 380.571px;
+            border-radius: 10px;
+            background: #c77128;
+
+            &_items {
+              &_content {
+                padding: 30px 16px 61px 19px;
+                .card_items_title {
+                  h3 {
+                    color: black;
+                    font-family: Inter;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                  }
+                }
+
+                .card_items_products_items {
+                  margin-top: 47px;
+                  display: flex;
+                  justify-content: space-between;
+                  .kilo {
+                    color: black;
+                    font-family: Inter;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                  }
+                  .price {
+                    color: #fff;
+                    font-family: Inter;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

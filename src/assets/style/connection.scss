@@ -1,0 +1,103 @@
+// Kaisei Opti \\
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@700&display=swap");
+
+// Inter \\
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+.connection {
+  background-image: url("../images/two_paper.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 291px;
+  &_items {
+    margin-top: 100px;
+    margin-bottom: 196px;
+    &_form {
+      width: 1066px;
+      margin: 0 auto;
+      border-radius: 10px;
+      background: #0b0b0b;
+      &_title {
+        text-align: center;
+        padding-top: 49px;
+        padding-bottom: 66px;
+        h4 {
+          color: #f49340;
+          font-family: Kaisei Opti;
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+
+      form {
+        background-image: url("../images/boglanish.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 27px 548px;
+        padding: 0px 125px;
+
+        label {
+          color: #f49340;
+          font-family: Inter;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        input {
+          margin: 24px 0px 25px 0px;
+          padding: 26px 31px;
+          width: 100%;
+          background-color: transparent;
+          border: 1px solid #fff;
+          color: #7a7a7a;
+          font-family: Inter;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        textarea {
+          margin: 24px 0px 88px 0px;
+          padding: 26px 31px;
+          width: 100%;
+          background-color: transparent;
+          border: 1px solid #fff;
+          color: #7a7a7a;
+          font-family: Inter;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          resize: none;
+        }
+
+        .btn {
+          text-align: center;
+          padding-bottom: 94px;
+          button {
+            padding: 30px 94px;
+            border: 1px solid #f49340;
+            text-decoration: none;
+            color: #fff;
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            transition: all 0.3s ease-in-out;
+            background: transparent;
+          }
+
+          button:hover {
+            background: #f49340;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}

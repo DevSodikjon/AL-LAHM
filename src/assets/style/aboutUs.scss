@@ -1,0 +1,43 @@
+// Kaisei Opti \\
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@700&display=swap");
+
+// Inter \\
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+.aboutUs {
+    background-image: url("../../assets/images/salt_pic.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  .aboutUs_items {
+    display: flex;
+    margin: 158px 0px 241px 0px;
+    &_img {
+      img {
+        width: 810px;
+        height: 693px;
+      }
+    }
+
+    &_content {
+      background: #232227;
+      h3 {
+        padding: 57px 314px 46px 275px;
+        color: #f49340;
+        font-family: Kaisei Opti;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      p {
+        padding: 0px 196px 161px 68px;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+}

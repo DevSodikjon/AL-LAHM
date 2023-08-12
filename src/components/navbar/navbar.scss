@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+// Kaisei Opti \\
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@700&display=swap");
+
+// Inter \\
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.navbar {
+  display: flex;
+  gap: 232px;
+  .navbar_ul {
+    display: flex;
+    gap: 42px;
+    li {
+      list-style-type: none;
+      .NavLink {
+        text-decoration: none;
+        color: #fff;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        transition: all 0.3s ease-in-out;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .NavLink:hover {
+        color: #f49340;
+        transition: all 0.3s ease-in-out;
+      }
+      a:hover {
+        color: #f49340;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+}

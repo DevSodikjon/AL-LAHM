@@ -1,0 +1,57 @@
+.comments {
+  &_items {
+    &_title {
+      h3 {
+        margin: 184px 0px 120px 0px;
+        text-align: center;
+        color: #f49340;
+        font-family: Kaisei Opti;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+
+    .card_box {
+      .card {
+        width: 565px;
+        border-radius: 10px;
+        background: #131213;
+        background-image: url("../images/com_img.png");
+        background-repeat: no-repeat;
+        background-position: 281px 179px;
+        &_items {
+          padding: 58px 28px 0px 24px;
+          margin-bottom: 102px;
+          &_username-starts {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 47px;
+            p {
+              color: #fff;
+              font-family: Inter;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+            }
+          }
+
+          .desc {
+            padding-bottom: 147px;
+            p {
+              color: #fff;
+              font-family: Inter;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}

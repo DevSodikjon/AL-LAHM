@@ -1,0 +1,90 @@
+// Kaisei Opti \\
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@700&display=swap");
+
+// Inter \\
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+footer {
+  border-top: 1px solid #f49340;
+  .footer_items {
+    display: flex;
+    gap: 313px;
+    padding-bottom: 85px;
+    .nav {
+      margin-top: 66px;
+      display: flex;
+      gap: 248px;
+
+      .icons_social {
+        margin-top: 223px;
+        float: right;
+        p {
+          color: #fff;
+          font-family: Inter;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        .box {
+          display: flex;
+          gap: 18px;
+          .social-container {
+            .Link_icon {
+              .social {
+                font-size: 40px;
+                margin-top: 22px;
+              }
+            }
+          }
+        }
+      }
+
+      .tels {
+        margin-top: -20px;
+        .telss {
+          text-decoration: none;
+          display: flex;
+          margin-top: 22px;
+          .iconPhones {
+            transform: rotateY(180deg);
+            color: #f49340;
+            font-size: 40px;
+          }
+          .tel_numbers {
+            color: #fff;
+            font-family: Inter;
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            transition: all 0.3s ease-in-out;
+          }
+
+          .tel_numbers:hover {
+            transition: all 0.3s ease-in-out;
+            color: #f49340;
+          }
+        }
+        .auth {
+          display: flex;
+          gap: 7px;
+          margin-top: 70px;
+          p {
+            color: #fff;
+            margin-top: 75px;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+
+          img {
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+}

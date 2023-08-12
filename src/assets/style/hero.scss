@@ -1,0 +1,62 @@
+// Kaisei Opti \\
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@700&display=swap");
+
+// Inter \\
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.hero {
+  background-image: url("../images/hero_main.png");
+  background-repeat: no-repeat;
+  background-position: 800px -40px;
+  &_items {
+    padding-bottom: 319px;
+    &_content {
+      width: 780px;
+      margin-top: 29px;
+      &_title {
+        margin-bottom: 76px;
+        h2 {
+          color: #fff;
+          font-family: Kaisei Opti;
+          font-size: 90px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          span {
+            color: #f49340;
+          }
+        }
+        p {
+          width: 570px;
+          color: #f49340;
+          font-family: Inter;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-top: 21px;
+        }
+      }
+
+      &_btn {
+        .menu_btn {
+          padding: 30px 94px;
+          border: 1px solid #f49340;
+          text-decoration: none;
+          color: #fff;
+          font-family: Inter;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          transition: all 0.3s ease-in-out;
+        }
+
+        .menu_btn:hover {
+          background: #f49340;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}

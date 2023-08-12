@@ -1,0 +1,72 @@
+// Kaisei Opti \\
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@700&display=swap");
+
+// Inter \\
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+.quality {
+  background: url("../images/unknown-bg.png");
+  background-repeat: no-repeat;
+  background-position: 100px 896px, 100px 896px;
+  .bg {
+    background: linear-gradient(92deg, #000000c9 0%, rgba(0, 0, 0, 0.436) 100%);
+    .quality_items {
+      &_content {
+        h3 {
+          text-align: center;
+          margin-bottom: 56px;
+          color: #f49340;
+          font-family: Kaisei Opti;
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        p {
+          width: 973px;
+          margin: 0 auto;
+          margin-bottom: 93px;
+          color: #fff;
+          text-align: center;
+          font-family: Inter;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+
+      &_images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 184px;
+      }
+
+      &_delivery {
+        padding: 100px 0px 333px 0px;
+        .title {
+          h4 {
+            padding-left: 25px;
+            color: #f49340;
+            font-family: Kaisei Opti;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+          p {
+            width: 513px;
+            margin-top: 33px;
+            color: #fff;
+            text-align: center;
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+}
