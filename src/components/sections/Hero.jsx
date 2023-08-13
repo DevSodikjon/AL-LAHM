@@ -14,7 +14,8 @@ const Hero = () => {
                   Haqiqiy <span>ta’am</span> va lazzatni his eting!
                 </h2>
                 <p>
-                  Sifatli go’sht, kolbasa va yarim tayyor go’sht mahsulotlari{" "}
+                  Sifatli go’sht, kolbasa va yarim <br /> tayyor go’sht
+                  mahsulotlari
                 </p>
               </div>
               <div className="hero_items_content_btn">

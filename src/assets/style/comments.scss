@@ -1,3 +1,8 @@
+// Kaisei Opti \\
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@700&display=swap");
+
+// Inter \\
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 .comments {
   &_items {
     &_title {
@@ -48,6 +53,45 @@
               font-style: normal;
               font-weight: 400;
               line-height: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .comments {
+    .comments_items_title {
+      h3 {
+        margin: 10px 0px 54px 0px;
+        font-size: 20px;
+      }
+    }
+
+    .card_box {
+      .card {
+        width: 249px;
+        background-position: 102px 117px;
+        background-size: 130px;
+        .card_items {
+          padding: 25px 16px 10px 24px;
+          .card_items_username-starts {
+            margin-bottom: 25px;
+            p {
+              font-size: 12px;
+            }
+
+            img {
+              width: 67.042px;
+            }
+          }
+
+          .desc {
+            padding-bottom: 81px;
+            p {
+              font-size: 10px;
             }
           }
         }

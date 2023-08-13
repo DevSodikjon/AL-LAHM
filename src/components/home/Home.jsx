@@ -16,9 +16,9 @@ const Home = () => {
       <Choice />
       <Products />
       <Acc />
-      <Quality/>
-      <Comments/>
-      <Connection/>
+      <Quality />
+      <Comments />
+      <Connection />
     </div>
   );
 };

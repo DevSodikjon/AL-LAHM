@@ -1,5 +1,5 @@
 import React from "react";
-import accThing from "../../assets/images/accThing.png"
+import accThing from "../../assets/images/accThing.png";
 
 
 const Cardacc = () => {

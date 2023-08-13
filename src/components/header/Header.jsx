@@ -3,12 +3,17 @@ import Navbar from "../navbar/Navbar";
 import React, { useState } from "react";
 import "../header/header.scss";
 import { PiPhoneFill } from "react-icons/pi";
-import { PiMoonBold } from "react-icons/pi";
-import { FiSun } from "react-icons/fi";
+import sun from "../../assets/images/sun-line.svg";
+import moon from "../../assets/images/moon.svg";
 import { NavLink } from "react-router-dom";
+import burger from "../../assets/images/burger.svg";
+import close from "../../assets/images/Close.svg";
 
 const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [active, setActive] = useState(false);
+
+  // Dark Mode \\
 
   const darkFunc = () => {
     setIsDarkMode(false);
@@ -16,6 +21,12 @@ const Header = () => {
 
   const lightFunc = () => {
     setIsDarkMode(true);
+  };
+
+  // Modal \\
+
+  const openModal = () => {
+    return setActive(!active);
   };
 
   return (
@@ -29,40 +40,104 @@ const Header = () => {
 
             <div className="navigationBar">
               <Navbar />
-            </div>
-
-            <div className="tel_">
-              <NavLink className="tel">
-                <PiPhoneFill className="iconPhone" />
-                <p className="tel_number">+(000)000 000</p>
-              </NavLink>
-              <div className="hr"></div>
-              <div className="checkbox">
-                <div className="darkmode">
-                  <div className="darkmode_border">
-                    <div
-                      className={`lightIcon_box  ${isDarkMode ? "" : "light"}`}
-                      onClick={darkFunc}
-                    >
-                      <FiSun className="lightIcon" />
+              <div className="tel_">
+                <NavLink className="tel">
+                  <PiPhoneFill className="iconPhone" />
+                  <p className="tel_number">+(000)000 000</p>
+                </NavLink>
+                <div className="hr"></div>
+                <div className="checkbox">
+                  <div className="darkmode">
+                    <div className="darkmode_border">
+                      <div
+                        className={`lightIcon_box  ${
+                          isDarkMode ? "" : "light"
+                        }`}
+                        onClick={darkFunc}
+                      >
+                        <img src={sun} className="lightIcon" alt="light" />
+                      </div>
+                      <div
+                        className={`moonIcon_box ${isDarkMode ? "light" : ""}`}
+                        onClick={lightFunc}
+                      >
+                        <img src={moon} alt="moon" className="moonIcon" />
+                      </div>
                     </div>
-                    <div
-                      className={`moonIcon_box ${isDarkMode ? "light" : ""}`}
-                      onClick={lightFunc}
-                    >
-                      <PiMoonBold className="moonIcon" />
+                  </div>
+
+                  <div className="lang_box">
+                    <div className="select-container">
+                      <select>
+                        <option value="0">Uzb</option>
+                        <option value="1">Rus</option>
+                        <option value="1">Eng</option>
+                      </select>
                     </div>
                   </div>
                 </div>
-
-                <div className="lang_box">
-                  <div className="select-container"></div>
-                </div>
               </div>
+            </div>
+
+            <div className="burger_icon_box">
+              <img
+                src={burger}
+                alt="burger"
+                className="burger_icon"
+                onClick={openModal}
+              />
             </div>
           </div>
         </div>
       </header>
+
+      <div className={`modal ${active ? "active" : ""}`}>
+        <div className="modal_items">
+          <div className="close_box">
+            <img
+              src={close}
+              alt="close"
+              className="close"
+              onClick={openModal}
+            />
+          </div>
+          <div className="checkbox">
+            <div className="darkmode">
+              <div className="darkmode_border">
+                <div
+                  className={`lightIcon_box  ${isDarkMode ? "" : "light"}`}
+                  onClick={darkFunc}
+                >
+                  <img src={sun} alt="sun" className="lightIcon" />
+                </div>
+                <div
+                  className={`moonIcon_box ${isDarkMode ? "light" : ""}`}
+                  onClick={lightFunc}
+                >
+                  <img src={moon} alt="moon" className="moonIcon" />
+                </div>
+              </div>
+            </div>
+
+            <div className="lang_box">
+              <div className="select-container">
+                <select>
+                  <option value="0">Uzb</option>
+                  <option value="1">Rus</option>
+                  <option value="1">Eng</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div className="tel_number">
+            <NavLink className="tel">
+              <PiPhoneFill className="iconPhone" />
+              <p className="tel_number">+(000)000 000</p>
+            </NavLink>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

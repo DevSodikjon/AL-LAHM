@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-position: 800px -40px;
   &_items {
-    padding-bottom: 319px;
+     margin-bottom: 280px; 
     &_content {
       width: 780px;
       margin-top: 29px;
@@ -39,6 +39,7 @@
       }
 
       &_btn {
+        margin-top: 76px;
         .menu_btn {
           padding: 30px 94px;
           border: 1px solid #f49340;
@@ -55,6 +56,37 @@
         .menu_btn:hover {
           background: #f49340;
           transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    background-image: url("../images/bg_tablet.png");
+    background-position: 334px 65px;
+    background-size: 429.658px;
+    .hero_items {
+      margin-bottom: 82px; 
+      .hero_items_content {
+        width: 100%;
+        .hero_items_content_title {
+          padding-right: 40px;
+          h2 {
+            font-size: 48px;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
+
+        .hero_items_content_btn {
+           margin-top: 158px;
+          .menu_btn {
+            padding: 20px 50px;
+            font-size: 20px;
+          }
         }
       }
     }

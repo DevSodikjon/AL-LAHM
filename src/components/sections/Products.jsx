@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../assets/style/products.scss";
 import CardsProducts from "../cards/CardsProducts";
 import { Link } from "react-router-dom";
@@ -14,6 +14,11 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const Products = () => {
+  const [maxWidth, setMaxWidth] = useState(700);
+
+  useEffect(() => {
+    setMaxWidth(window.innerWidth);
+  },[window.innerWidth]);
   return (
     <div>
       <div className="products" id="products">
@@ -29,7 +34,7 @@ const Products = () => {
                   className="swippper"
                   modules={[Navigation, Pagination, Scrollbar, A11y]}
                   spaceBetween={20}
-                  slidesPerView={4}
+                  slidesPerView={maxWidth < 768 ? 3 : 4}
                   navigation
                   pagination={{ clickable: true }}
                   scrollbar={{ draggable: true }}

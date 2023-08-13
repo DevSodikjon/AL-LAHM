@@ -32,8 +32,6 @@
 
         text-align: center;
         &_items {
-          &_img {
-          }
           &_title {
             margin-top: 38px;
             h3 {
@@ -53,6 +51,51 @@
               font-style: normal;
               font-weight: 400;
               line-height: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .choice {
+    background-image: url("../images/bg_choice.png");
+    background-position: -2px 48px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    .choice_items {
+      margin-bottom: 106px;
+      .choice_items_title {
+        margin-top: 0px;
+        h3 {
+          font-size: 20px;
+        }
+      }
+
+      .choice_items_cardsBox {
+        .card {
+          width: 189px;
+          .card_items {
+            .card_items_img {
+              margin: 0 auto;
+              width: 68px;
+              img {
+                width: 100%;
+              }
+            }
+
+            .card_items_title {
+              h3 {
+                font-size: 20px;
+              }
+            }
+
+            .card_items_desc {
+              p {
+                font-size: 13px;
+              }
             }
           }
         }

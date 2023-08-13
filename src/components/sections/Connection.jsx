@@ -20,14 +20,7 @@ const Connection = () => {
                 <label htmlFor="Telefon raqam">Telefon raqam</label>
                 <input type="text" placeholder="+ (000) 00 000" />
               </div>
-              {/* <div className="tel">
-                <div className="phone_label">
-                  <label htmlFor="Telefon raqam">Telefon raqam</label>
-                </div>
-                <div>
-                  <input type="tel" placeholder="+ (000) 00 000" />
-                </div>
-              </div> */}
+
               <div className="desc">
                 <label htmlFor="Izoh">Izoh</label>
                 <textarea name="izoh" id="izoh" cols="30" rows="10"></textarea>

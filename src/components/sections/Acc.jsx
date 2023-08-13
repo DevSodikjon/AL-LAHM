@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import "../../assets/style/acc.scss";
 import Cardacc from "../cards/Cardacc";
@@ -13,6 +13,12 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const Acc = () => {
+  const [maxWidth, setMaxWidth] = useState(700);
+
+  useEffect(() => {
+    setMaxWidth(window.innerWidth);
+  }, [window.innerWidth]);
+
   return (
     <div className="acc">
       <div className="container">
@@ -27,7 +33,7 @@ const Acc = () => {
                 className="swippper"
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={20}
-                slidesPerView={4}
+                slidesPerView={maxWidth < 768 ? 3 : 4}
                 navigation
                 pagination={{ clickable: true }}
                 scrollbar={{ draggable: true }}

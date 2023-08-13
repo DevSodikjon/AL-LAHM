@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-position: 100px 896px, 100px 896px;
   .bg {
-    background: linear-gradient(92deg, #000000c9 0%, rgba(0, 0, 0, 0.436) 100%);
+    background: linear-gradient(92deg, #000000b1 0%, rgba(0, 0, 0, 0.436) 100%);
     .quality_items {
       &_content {
         h3 {
@@ -64,6 +64,57 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .quality {
+    background-position: -95px 619px;
+    background-size: 1113px;
+    .quality_items {
+      .quality_items_content {
+        h3 {
+          font-size: 20px;
+          margin-bottom: 24px;
+        }
+
+        p {
+          width: 74%;
+          font-size: 16px;
+          margin-bottom: 59px;
+        }
+      }
+      .quality_items_images {
+        img {
+          width: 100%;
+        }
+
+        .paper {
+          width: 62px;
+        }
+
+        .meat_ {
+          width: 298px;
+        }
+        .spoon {
+          width: 141px;
+        }
+      }
+
+      .quality_items_delivery {
+        padding: 64px 0px 333px 0px;
+        .title {
+          h4 {
+            font-size: 24px;
+            padding-left:0px;
+          }
+          p {
+            width: 303px;
+            font-size: 20px;
           }
         }
       }

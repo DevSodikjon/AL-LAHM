@@ -101,3 +101,47 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .connection {
+    .connection_items {
+      padding: 0px 20px;
+      .connection_items_form {
+        width: 100%;
+        .connection_items_form_title {
+          h4 {
+            font-size: 20px;
+          }
+        }
+
+        form {
+          padding: 0px 28px;
+          background-position: 53px 478px;
+          label {
+            margin-left: 40px;
+          }
+
+          input {
+            padding: 23px 31px;
+            margin: 18px 0px 25px 0px;
+            font-size: 16px;
+          }
+
+          textarea {
+            padding: 23px 31px;
+            margin: 18px 0px 25px 0px;
+            font-size: 16px;
+          }
+
+          .btn {
+            margin-top: 58зч;
+            .submit {
+              font-size: 20px;
+              padding: 22px 68px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

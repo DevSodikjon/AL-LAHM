@@ -8,7 +8,7 @@ const Navbar = () => {
       <ul className="navbar_ul">
         <li>
           {/* <NavLink to={"#aboutUs"} className="NavLink">Asosiy</NavLink> */}
-          <a href="#aboutUs">About</a>
+          <a href="#aboutUs">Asosiy</a>
         </li>
         <li>
           {/* <NavLink className="NavLink">Biz haqimizda</NavLink> */}
