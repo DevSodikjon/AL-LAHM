@@ -110,11 +110,54 @@
         .title {
           h4 {
             font-size: 24px;
-            padding-left:0px;
+            padding-left: 0px;
           }
           p {
             width: 303px;
             font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .quality {
+    background: linear-gradient(92deg, #000000ec 0%, rgba(0, 0, 0, 0.096) 100%);
+    background: url("../images/quality_bg_mobile.png");
+    background-repeat: no-repeat;
+    background-position-y: 343px, 343px;
+
+    .quality_items {
+      .quality_items_content {
+        p {
+          width: 100%;
+          font-size: 10px;
+          margin-bottom: 34px;
+          br {
+            display: none;
+          }
+        }
+      }
+
+      .quality_items_images {
+        margin-bottom: 68px;
+      }
+
+      .quality_items_delivery {
+        padding: 0px 0px 148px 0px;
+        .title {
+          text-align: left;
+          h3 {
+            font-size: 20px;
+          }
+
+          p {
+            margin-top: 11px;
+            width: 137px;
+            text-align: start;
+            font-size: 10px;
           }
         }
       }

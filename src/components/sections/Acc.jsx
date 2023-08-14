@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../assets/style/acc.scss";
 import Cardacc from "../cards/Cardacc";
@@ -62,6 +62,52 @@ const Acc = () => {
                   <Cardacc />
                 </SwiperSlide>
                 <SwiperSlide>
+                  <Cardacc />
+                </SwiperSlide>
+              </Swiper>
+            </Link>
+            <Link className="cardProductsLink add">
+              <Swiper
+                className="swippper"
+                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                spaceBetween={20}
+                slidesPerView={2}
+                navigation
+                pagination={{ clickable: true }}
+                scrollbar={{ draggable: true }}
+                onSwiper={(swiper) => console.log(swiper)}
+                onSlideChange={() => console.log("slide change")}
+              >
+                <SwiperSlide>
+                  <Cardacc />
+                  <Cardacc />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Cardacc />
+                  <Cardacc />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Cardacc />
+                  <Cardacc />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Cardacc />
+                  <Cardacc />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Cardacc />
+                  <Cardacc />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Cardacc />
+                  <Cardacc />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Cardacc />
+                  <Cardacc />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Cardacc />
                   <Cardacc />
                 </SwiperSlide>
               </Swiper>

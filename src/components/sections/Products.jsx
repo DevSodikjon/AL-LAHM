@@ -42,38 +42,78 @@ const Products = () => {
                   onSwiper={(swiper) => console.log(swiper)}
                   onSlideChange={() => console.log("slide change")}
                 >
-                  <div className="cardSlide">
-                    <div className="top">
-                      <SwiperSlide>
-                        <CardsProducts />
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <CardsProducts />
-                      </SwiperSlide>
-                    </div>
-                    <div className="bottom">
-                      <SwiperSlide>
-                        <CardsProducts />
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <CardsProducts />
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <CardsProducts />
-                      </SwiperSlide>
-                    </div>
-                    <div className="add">
-                      <SwiperSlide>
-                        <CardsProducts />
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <CardsProducts />
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <CardsProducts />
-                      </SwiperSlide>
-                    </div>
-                  </div>
+                  <SwiperSlide>
+                    <CardsProducts />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <CardsProducts />
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <CardsProducts />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <CardsProducts />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <CardsProducts />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <CardsProducts />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <CardsProducts />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <CardsProducts />
+                  </SwiperSlide>
+                </Swiper>
+              </Link>
+              <Link className="cardProductsLink add">
+                <Swiper
+                  className="swippper"
+                  modules={[Navigation, Pagination, Scrollbar, A11y]}
+                  spaceBetween={20}
+                  slidesPerView={2}
+                  navigation
+                  pagination={{ clickable: true }}
+                  scrollbar={{ draggable: true }}
+                  onSwiper={(swiper) => console.log(swiper)}
+                  onSlideChange={() => console.log("slide change")}
+                >
+                  <SwiperSlide>
+                    <CardsProducts />
+                    <CardsProducts />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <CardsProducts />
+                    <CardsProducts />
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <CardsProducts />
+                    <CardsProducts />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <CardsProducts />
+                    <CardsProducts />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <CardsProducts />
+                    <CardsProducts />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <CardsProducts />
+                    <CardsProducts />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <CardsProducts />
+                    <CardsProducts />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <CardsProducts />
+                    <CardsProducts />
+                  </SwiperSlide>
                 </Swiper>
               </Link>
             </div>

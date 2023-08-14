@@ -19,6 +19,9 @@
     }
 
     .card_box {
+      .mobile {
+        display: none;
+      }
       .card {
         width: 565px;
         border-radius: 10px;
@@ -71,6 +74,9 @@
     }
 
     .card_box {
+      .mobile {
+        display: none;
+      }
       .card {
         width: 249px;
         background-position: 102px 117px;
@@ -92,6 +98,47 @@
             padding-bottom: 81px;
             p {
               font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .comments {
+    .comments_items_title {
+      padding: 0px 30px;
+      h3 {
+        font-size: 20px;
+      }
+    }
+
+    .card_box {
+      .tabled {
+        display: none;
+      }
+      .mobile {
+        display: flex;
+        .card {
+          width: 196px;
+          .card_items {
+            .card_items_username-starts {
+              p {
+                font-size: 8px;
+              }
+
+              img {
+                width: 52px;
+              }
+            }
+
+            .desc {
+              p {
+                width: 122px;
+                font-size: 10px;
+              }
             }
           }
         }

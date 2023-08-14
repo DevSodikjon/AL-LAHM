@@ -9,8 +9,8 @@
   background-size: contain;
   background-size: 291px;
   &_items {
-    margin-top: 100px;
-    margin-bottom: 196px;
+    margin-top: 100px 0px 196px 0px;
+
     &_form {
       width: 1066px;
       margin: 0 auto;
@@ -18,8 +18,7 @@
       background: #0b0b0b;
       &_title {
         text-align: center;
-        padding-top: 49px;
-        padding-bottom: 66px;
+        padding-top: 49px 0px 66px 0px;
         h4 {
           color: #f49340;
           font-family: Kaisei Opti;
@@ -138,6 +137,51 @@
             .submit {
               font-size: 20px;
               padding: 22px 68px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .connection {
+    .connection_items {
+      padding-bottom: 64px;
+      .connection_items_form {
+        .connection_items_form_title {
+          padding: 24px 0px 24px;
+          h4 {
+            font-size: 20px;
+          }
+        }
+
+        form {
+          background-position: 12px 478px;
+          background-size: 300px;
+          label {
+            font-size: 12px;
+            margin-left: 0;
+          }
+
+          input {
+            font-size: 12px;
+            padding: 12px 0px 12px 5px;
+            margin: 7px 0px 16px 0px;
+          }
+
+          .textarea {
+            font-size: 12px;
+            padding: 12px 0px 12px 5px;
+            margin: 7px 0px 16px 0px;
+          }
+
+          .btn {
+            margin-top: 58зч;
+            .submit {
+              font-size: 15px;
+              padding: 9px 31px;
             }
           }
         }

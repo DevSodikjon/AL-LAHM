@@ -3,10 +3,10 @@ import Hero from "../sections/Hero";
 import AboutUs from "../sections/AboutUs";
 import Choice from "../sections/Choice";
 import Products from "../sections/Products";
-// import Acc from "../sections/Acc";
-// import Quality from "../sections/Quality";
-// import Comments from "../sections/Comments";
-// import Connection from "../sections/Connection";
+import Acc from "../sections/Acc";
+import Quality from "../sections/Quality";
+import Comments from "../sections/Comments";
+import Connection from "../sections/Connection";
 
 const Home = () => {
   return (
@@ -15,10 +15,10 @@ const Home = () => {
       <AboutUs />
       <Choice />
       <Products />
-      {/* <Acc /> */}
-      {/* <Quality /> */}
-      {/* <Comments /> */}
-      {/* <Connection /> */}
+      <Acc />
+      <Quality />
+      <Comments />
+      <Connection />
     </div>
   );
 };

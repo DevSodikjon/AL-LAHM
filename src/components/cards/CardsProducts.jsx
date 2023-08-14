@@ -12,7 +12,7 @@ const CardsProducts = () => {
           <div className="card_items_title">
             <h3>Kolbasa mahsulotlari</h3>
           </div>
-
+          <hr />
           <div className="card_items_products_items">
             <p className="kilo">1k</p>
             <p className="price">89.000 so’m</p>

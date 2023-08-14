@@ -14,7 +14,7 @@ const Cardacc = () => {
           <div className="card_items_title">
             <h3>Yarim tayyor kaboblar</h3>
           </div>
-
+          <hr />
           <div className="card_items_products_items">
             <p className="kilo">6 ta</p>
             <p className="price">89.000 so’m</p>

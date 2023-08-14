@@ -4,6 +4,7 @@
 // Inter \\
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 footer {
+  display: block;
   border-top: 1px solid #f49340;
   .footer_items {
     display: flex;
@@ -116,8 +117,13 @@ footer {
   }
 }
 
+.footer_mobile {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   footer {
+    display: block;
     .footer_items {
       gap: 111px;
       .footer_items_logo {
@@ -188,6 +194,136 @@ footer {
               margin-top: 22px;
             }
           }
+        }
+      }
+    }
+  }
+
+  .footer_mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  footer {
+    display: none;
+  }
+
+  .footer_mobile {
+    display: block;
+
+    .footer_mobile_items {
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        padding-bottom: 52px;
+        img {
+          width: 45px;
+        }
+
+        p {
+          color: #fff;
+          font-family: Kaisei Opti;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+
+      .navbar {
+        margin: 0px 0px 47px 0px;
+        ul {
+          li {
+            list-style-type: none;
+            margin-bottom: 30px;
+            a {
+              text-decoration: none;
+              color: #fff;
+              font-family: Inter;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+          }
+        }
+      }
+
+      .tel {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        text-decoration: none;
+        margin-bottom: 8px;
+        .iconPhone {
+          transform: rotateY(180deg);
+          color: #f49340;
+          font-size: 35px;
+        }
+        .tel_number {
+          color: #fff;
+          font-family: Inter;
+          font-size: 26px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          transition: all 0.3s ease-in-out;
+        }
+
+        .tel_number:hover {
+          transition: all 0.3s ease-in-out;
+          color: #4b4646b3;
+        }
+      }
+
+      .social_box {
+        width: 165px;
+        padding-bottom: 79px;
+
+        .text {
+          margin-top: 32px;
+          p {
+            color: #fff;
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+
+        .icons {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .social-container {
+            margin-top: 22px;
+            .Link_icon {
+              .social {
+                font-size: 30px;
+              }
+            }
+          }
+        }
+      }
+      .auth {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        p {
+          color: #fff;
+          font-family: Inter;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        img {
+          width: 107px;
         }
       }
     }

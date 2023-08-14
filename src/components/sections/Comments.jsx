@@ -23,10 +23,40 @@ const Comments = () => {
 
           <div className="card_box">
             <Swiper
-              // install Swiper modules
+              className="tabled"
               modules={[Navigation, Pagination, Scrollbar, A11y]}
-              spaceBetween={180}
+              spaceBetween={100}
               slidesPerView={3}
+              navigation
+              pagination={{ clickable: true }}
+              scrollbar={{ draggable: true }}
+              onSwiper={(swiper) => console.log(swiper)}
+              onSlideChange={() => console.log("slide change")}
+            >
+              <SwiperSlide>
+                <CardsComments />
+              </SwiperSlide>
+              <SwiperSlide>
+                <CardsComments />
+              </SwiperSlide>
+              <SwiperSlide>
+                <CardsComments />
+              </SwiperSlide>
+              <SwiperSlide>
+                <CardsComments />
+              </SwiperSlide>
+              <SwiperSlide>
+                <CardsComments />
+              </SwiperSlide>
+              <SwiperSlide>
+                <CardsComments />
+              </SwiperSlide>
+            </Swiper>
+            <Swiper
+              className="tabled mobile"
+              modules={[Navigation, Pagination, Scrollbar, A11y]}
+              spaceBetween={100}
+              slidesPerView={2}
               navigation
               pagination={{ clickable: true }}
               scrollbar={{ draggable: true }}
