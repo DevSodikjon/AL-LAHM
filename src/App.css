@@ -32,6 +32,14 @@ html {
   }
 }
 
+@media screen and (max-width: 360px) {
+  .container {
+    max-width: 320px;
+    margin: 0 auto;
+    /* border: 1px solid green; */
+  }
+}
+
 .App_items_section {
   background: url("./assets/images/background_1.png"),
     rgb(8, 8, 8) 50% / cover no-repeat;

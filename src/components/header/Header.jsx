@@ -1,13 +1,14 @@
-import logo from "../../assets/images/LogoNew.png";
+import HeaderMobile from "../header/HeaderMobile.jsx";
 import Navbar from "../navbar/Navbar";
 import React, { useState } from "react";
-import "../header/header.scss";
+import { NavLink } from "react-router-dom";
 import { PiPhoneFill } from "react-icons/pi";
+import logo from "../../assets/images/LogoNew.png";
 import sun from "../../assets/images/sun-line.svg";
 import moon from "../../assets/images/moon.svg";
-import { NavLink } from "react-router-dom";
 import burger from "../../assets/images/burger.svg";
 import close from "../../assets/images/Close.svg";
+import "../header/header.scss";
 
 const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -26,6 +27,7 @@ const Header = () => {
   // Modal \\
 
   const openModal = () => {
+    console.log("active");
     return setActive(!active);
   };
 
@@ -88,6 +90,8 @@ const Header = () => {
               />
             </div>
           </div>
+
+          <HeaderMobile />
         </div>
       </header>
 

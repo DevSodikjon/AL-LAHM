@@ -68,3 +68,42 @@
     }
   }
 }
+@media screen and (max-width: 360px) {
+  .aboutUs {
+    background-image: url("../images/saly_picMobile.png");
+    background-repeat: no-repeat;
+    background-size: 331px;
+    background-position-y: -61px;
+    .aboutUs_items {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 62px 0px 161px 0px !important;
+      margin: 0;
+      .aboutUs_items_content {
+        width: 320px;
+        h3 {
+          padding: 11px 0px 10px 0px;
+          font-size: 16px;
+          font-weight: 700;
+        }
+
+        p {
+          padding: 0px 20px 16px 20px;
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
+      .aboutUs_items_img {
+        width: 320px;
+
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+        .tabled {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -20,123 +20,123 @@ header {
     .burger_icon_box {
       display: none;
     }
-  }
-}
 
-.tel {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  text-decoration: none;
-  margin-top: 60px;
-
-  .iconPhone {
-    transform: rotateY(180deg);
-    color: #f49340;
-    font-size: 40px;
-  }
-  .tel_number {
-    color: #fff;
-    font-family: Inter;
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .tel_number:hover {
-    transition: all 0.3s ease-in-out;
-    color: #f49340;
-  }
-}
-.hr {
-  margin: 19px 0px 9px;
-  width: 219px;
-  height: 2px;
-  background-color: #f49340;
-}
-
-.checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  .darkmode {
-    .darkmode_border {
+    .tel {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      width: 95px;
-      height: 38px;
-      padding: 4px;
-      border-radius: 500px;
-      border: 1px solid #f49340;
-      transition: all 0.3s ease-in-out;
+      gap: 9px;
+      text-decoration: none;
+      margin-top: 60px;
 
-      .lightIcon_box {
-        width: 45px;
-        height: 30px;
-        padding: 4px 12px;
-        border-radius: 20px;
-
-        .lightIcon {
-          font-size: 20px;
-          color: #f49340 !important;
-        }
-      }
-
-      .moonIcon_box {
-        width: 42px;
-        height: 30px;
-        padding: 4px 12px;
-        border-radius: 20px;
-        .moonIcon {
-          font-size: 20px;
-          color: #f49340 !important;
-        }
-      }
-
-      .lightIcon_box:hover {
-        cursor: pointer;
-      }
-      .moonIcon_box:hover {
-        cursor: pointer;
-      }
-
-      .light {
-        background: #f49340;
-        transition: all 0.3s ease-in-out;
-        .lightIcon {
-          font-size: 20px;
-          color: #fff;
-        }
-        .moonIcon {
-          font-size: 20px;
-          color: white;
-        }
-      }
-    }
-  }
-
-  .lang_box {
-    .select-container {
-      select {
-        width: 96px;
-        padding: 3px 13px 3px 9px;
-        background: transparent;
+      .iconPhone {
+        transform: rotateY(180deg);
         color: #f49340;
+        font-size: 40px;
+      }
+      .tel_number {
+        color: #fff;
         font-family: Inter;
-        font-size: 24px;
+        font-size: 23px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        border-radius: 27px;
-        border: 1px solid #f49340;
+        transition: all 0.3s ease-in-out;
+      }
 
-        option {
-          color: #f49340;
-          background: #000;
-          border: none;
+      .tel_number:hover {
+        transition: all 0.3s ease-in-out;
+        color: #f49340;
+      }
+    }
+    .hr {
+      margin: 19px 0px 9px;
+      width: 219px;
+      height: 2px;
+      background-color: #f49340;
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .darkmode {
+        .darkmode_border {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 95px;
+          height: 38px;
+          padding: 4px;
+          border-radius: 500px;
+          border: 1px solid #f49340;
+          transition: all 0.3s ease-in-out;
+
+          .lightIcon_box {
+            width: 45px;
+            height: 30px;
+            padding: 4px 12px;
+            border-radius: 20px;
+
+            .lightIcon {
+              font-size: 20px;
+              color: #f49340 !important;
+            }
+          }
+
+          .moonIcon_box {
+            width: 42px;
+            height: 30px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            .moonIcon {
+              font-size: 20px;
+              color: #f49340 !important;
+            }
+          }
+
+          .lightIcon_box:hover {
+            cursor: pointer;
+          }
+          .moonIcon_box:hover {
+            cursor: pointer;
+          }
+
+          .light {
+            background: #f49340;
+            transition: all 0.3s ease-in-out;
+            .lightIcon {
+              font-size: 20px;
+              color: #fff;
+            }
+            .moonIcon {
+              font-size: 20px;
+              color: white;
+            }
+          }
+        }
+      }
+
+      .lang_box {
+        .select-container {
+          select {
+            width: 96px;
+            padding: 3px 13px 3px 9px;
+            background: transparent;
+            color: #f49340;
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            border-radius: 27px;
+            border: 1px solid #f49340;
+
+            option {
+              color: #f49340;
+              background: #000;
+              border: none;
+            }
+          }
         }
       }
     }
@@ -323,6 +323,185 @@ header {
 
   .active {
     right: 0px;
+    transition: all 0.6s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  header {
+    .header_items {
+      display: none;
+    }
+  }
+  .mobilHeader {
+    .mobilHeader_items {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+      .mobileHeader_items_logo {
+        width: 72px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .modalPhone {
+    background: #f49340;
+    transition: all 0.6s ease-in-out;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 360px;
+    .modalPhone_items {
+      padding: 0px 37px;
+      .logo {
+        width: 76px;
+        margin: 0 auto;
+        padding: 15px 0px;
+        img {
+          width: 100%;
+        }
+      }
+
+      .navbar {
+        margin: 37px 0px 19px 0px;
+        ul {
+          li {
+            list-style-type: none;
+            margin-bottom: 30px;
+            a {
+              text-decoration: none;
+              color: #fff;
+              font-family: Inter;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+          }
+        }
+      }
+      .checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 35px;
+        .darkmode {
+          .darkmode_border {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 95px;
+            height: 38px;
+            padding: 4px;
+            border-radius: 500px;
+            border: 1px solid #ffff;
+            transition: all 0.3s ease-in-out;
+
+            .lightIcon_box {
+              width: 45px;
+              height: 30px;
+              padding: 4px 12px;
+              border-radius: 20px;
+              .lightIcon {
+                font-size: 20px;
+                color: #f49340;
+              }
+            }
+
+            .moonIcon_box {
+              width: 42px;
+              height: 30px;
+              padding: 4px 12px;
+              border-radius: 20px;
+              .moonIcon {
+                font-size: 20px;
+                color: #fff;
+              }
+            }
+
+            .lightIcon_box:hover {
+              cursor: pointer;
+            }
+            .moonIcon_box:hover {
+              cursor: pointer;
+            }
+
+            .light {
+              background: #fff;
+              transition: all 0.3s ease-in-out;
+              .lightIcon {
+                font-size: 20px;
+                color: #f49340;
+              }
+              .moonIcon {
+                font-size: 20px;
+                color: #f49340;
+              }
+            }
+          }
+        }
+
+        .lang_box {
+          .select-container {
+            select {
+              width: 96px;
+              padding: 3px 13px 3px 9px;
+              background: transparent;
+              color: #fff;
+              font-family: Inter;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              border-radius: 27px;
+              border: 1px solid #fff;
+
+              option {
+                color: #fff;
+                background: #f49340;
+                border: none;
+              }
+            }
+          }
+        }
+      }
+
+      .tel {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        text-decoration: none;
+        margin-top: 34px;
+        padding-bottom: 172px;
+
+        .iconPhone {
+          transform: rotateY(180deg);
+          color: #f49340;
+          font-size: 35px;
+        }
+        .tel_number {
+          color: #fff;
+          font-family: Inter;
+          font-size: 26px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          transition: all 0.3s ease-in-out;
+        }
+
+        .tel_number:hover {
+          transition: all 0.3s ease-in-out;
+          color: #4b4646b3;
+        }
+      }
+    }
+  }
+
+  .active {
+    top: 11%;
     transition: all 0.6s ease-in-out;
   }
 }

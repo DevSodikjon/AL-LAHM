@@ -21,6 +21,11 @@ const Hero = () => {
               <div className="hero_items_content_btn">
                 <NavLink className="menu_btn">Menuni ko'rish</NavLink>
               </div>
+              <div className="text">
+                <p>
+                  Sifatli go’sht, kolbasa va yarim tayyor go’sht mahsulotlari
+                </p>
+              </div>
             </div>
           </div>
         </div>

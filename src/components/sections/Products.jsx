@@ -18,7 +18,8 @@ const Products = () => {
 
   useEffect(() => {
     setMaxWidth(window.innerWidth);
-  },[window.innerWidth]);
+  }, [window.innerWidth]);
+
   return (
     <div>
       <div className="products" id="products">
@@ -41,30 +42,38 @@ const Products = () => {
                   onSwiper={(swiper) => console.log(swiper)}
                   onSlideChange={() => console.log("slide change")}
                 >
-                  <SwiperSlide>
-                    <CardsProducts />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <CardsProducts />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <CardsProducts />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <CardsProducts />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <CardsProducts />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <CardsProducts />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <CardsProducts />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <CardsProducts />
-                  </SwiperSlide>
+                  <div className="cardSlide">
+                    <div className="top">
+                      <SwiperSlide>
+                        <CardsProducts />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <CardsProducts />
+                      </SwiperSlide>
+                    </div>
+                    <div className="bottom">
+                      <SwiperSlide>
+                        <CardsProducts />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <CardsProducts />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <CardsProducts />
+                      </SwiperSlide>
+                    </div>
+                    <div className="add">
+                      <SwiperSlide>
+                        <CardsProducts />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <CardsProducts />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <CardsProducts />
+                      </SwiperSlide>
+                    </div>
+                  </div>
                 </Swiper>
               </Link>
             </div>
