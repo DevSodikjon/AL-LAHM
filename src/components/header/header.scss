@@ -143,6 +143,16 @@ header {
   }
 }
 
+.mobilHeader{
+  display: none;
+}
+
+.modalPhone{
+  display: none;
+}
+
+
+
 .modal {
   display: none;
 }
@@ -334,6 +344,7 @@ header {
     }
   }
   .mobilHeader {
+    display: grid;
     .mobilHeader_items {
       display: flex;
       align-items: center;
@@ -348,10 +359,11 @@ header {
     }
   }
   .modalPhone {
+    display: block;
     background: #f49340;
     transition: all 0.6s ease-in-out;
     position: fixed;
-    top: -100%;
+    top: -120%;
     left: 0;
     width: 360px;
     .modalPhone_items {

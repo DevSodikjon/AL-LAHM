@@ -15,6 +15,10 @@
       width: 810px;
     }
 
+    .mobile{
+      display: none;
+    }
+
     &_content {
       background: #232227;
       h3 {
@@ -96,9 +100,12 @@
       .aboutUs_items_img {
         width: 320px;
 
-        overflow: hidden;
         img {
           width: 100%;
+        }
+
+        .mobile{
+          display: flex;
         }
         .tabled {
           display: none;

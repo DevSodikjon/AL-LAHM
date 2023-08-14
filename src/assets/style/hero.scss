@@ -58,6 +58,12 @@
           transition: all 0.3s ease-in-out;
         }
       }
+
+      .text {
+        display: none;
+        p {
+        }
+      }
     }
   }
 }
@@ -103,7 +109,7 @@
       padding-bottom: 50px;
       .hero_items_content {
         width: 100%;
-        border: 1px solid red;
+
         .hero_items_content_title {
           padding: 0px;
           margin-bottom: 374px;
@@ -127,6 +133,7 @@
         }
 
         .text {
+          display: flex;
           margin-top: 50px;
           background: #f49340;
           padding: 3px 0px;
