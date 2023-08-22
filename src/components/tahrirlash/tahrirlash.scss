@@ -12,12 +12,8 @@
   .tahrirlash_items {
     background: url("../../assets/images/bg_grey.png");
     padding-top: 303px;
-      padding-bottom: 291px;
+    padding-bottom: 291px;
     .modals {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.1);
-
       .title {
         text-align: center;
         padding: 159px 0px 110px;
@@ -62,212 +58,31 @@
               text-align: center;
               padding-bottom: 154px;
             }
-          }
-        }
-      }
-    }
 
-    .login {
-      // position: fixed;
-      // top: -150%;
-      width: 1353px;
-      padding: 0px 274px;
-      margin: 0 auto;
-      margin-top: 291px;
-      margin-bottom: 291px;
-      border-radius: 10px;
-      background: #fff;
-      box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.1);
-      .login_items {
-        .login_items_title {
-          text-align: center;
-          padding-top: 171px;
-          h3 {
-            color: #000;
-            font-family: Inter;
-            font-size: 36px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-          }
-        }
-
-        .formLogin {
-          display: flex;
-          flex-direction: column;
-          margin: 66px 0px 0px 0px;
-          label {
-            color: var(--dark, #1c2434);
-            font-family: Inter;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 24px;
-          }
-
-          .parol {
-            margin-top: 36px;
-          }
-
-          .email {
-            display: flex;
-            align-items: center;
-            border-radius: 8px;
-            margin-top: 18px;
-            border: 1px solid var(--stroke, #e2e8f0);
-            background: var(--white, #fff);
-            input {
-              width: 100%;
-              padding: 31px 37px 32px 46px;
-              color: var(--text-color, #64748b);
-              font-family: Inter;
-              font-size: 24px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 24px;
-              border: none;
-            }
-          }
-
-          .btn {
-            margin-top: 161px;
-            margin: 161px auto;
-            margin-bottom: 128px;
-            button {
-              background: transparent;
-              padding: 18px 121px;
-              border-radius: 30px;
-              border: 2px solid #c77128;
-              color: #c77128;
-              text-align: center;
-              font-family: Inter;
-              font-size: 18px;
-              font-weight: 400;
-            }
-          }
-        }
-      }
-    }
-
-    .productAdd {
-      // position: fixed;
-      // top: -200%;
-      width: 1353px;
-      padding: 0px 82px;
-      margin: 0 auto;
-      margin-top: 291px;
-    
-      border-radius: 10px;
-      background: #fff;
-      box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.1);
-      .productAdd_items {
-        .productAdd_items_title {
-          text-align: center;
-          padding-top: 171px;
-          h3 {
-            color: #000;
-            font-family: Inter;
-            font-size: 36px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-          }
-        }
-
-        .formLogin {
-          display: flex;
-          flex-direction: column;
-          margin: 66px 0px 0px 0px;
-          label {
-            color: var(--dark, #1c2434);
-            font-family: Inter;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 24px;
-          }
-
-          .parol {
-            margin-top: 88px;
-          }
-
-          .email {
-            display: flex;
-            align-items: center;
-            border-radius: 8px;
-            margin-top: 18px;
-            border: 1px solid var(--stroke, #e2e8f0);
-            background: var(--white, #fff);
-            input {
-              width: 100%;
-              padding: 31px 37px 32px 46px;
-              color: var(--text-color, #64748b);
-              font-family: Inter;
-              font-size: 24px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 24px;
-              border: none;
-
-              span {
-                img {
-                  top: 0;
-                }
-              }
-            }
-
-            .star-img {
-              padding: 31px 37px 32px 46px;
-              img {
-                color: #000;
+            .add {
+              img:hover {
+                cursor: pointer;
               }
             }
           }
-
-          .izoh {
-            display: flex;
-            flex-direction: column;
-            label {
-              margin: 88px 0px 19px 0px;
-              color: var(--dark, #1c2434);
-              font-family: Inter;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 24px;
-            }
-            textarea {
-              padding: 38px 49px;
-              border: 1px solid var(--stroke, #e2e8f0);
-              resize: none;
-              border-radius: 8px;
-              font-family: Inter;
-              font-size: 24px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: normal;
-            }
-          }
-
-          .btn {
-            margin-top: 161px;
-            margin: 161px auto;
-            margin-bottom: 128px;
-            button {
-              background: transparent;
-              padding: 18px 121px;
-              border-radius: 30px;
-              border: 2px solid #c77128;
-              color: #c77128;
-              text-align: center;
-              font-family: Inter;
-              font-size: 18px;
-              font-weight: 400;
-            }
-          }
         }
       }
     }
+
+    .active {
+      top: -200px;
+      right: 0px;
+      left: 0px;
+      transition: all 1s ease;
+    }
+  }
+}
+
+.tahrirlashNew {
+  .modals {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -319,93 +134,89 @@
         }
       }
 
-      .login {
-        // position: fixed;
-        // top: -150%;
-        width: 95%;
-        padding: 0px 56px;
-        margin: 0 auto;
-        margin-top: 291px;
-        margin-bottom: 291px;
-        border-radius: 10px;
-        background: #fff;
-        box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.1);
-        .login_items {
-          .login_items_title {
-            text-align: center;
-            padding-top: 77px;
+      // .login {
+      //   width: 95%;
+      //   padding: 0px 56px;
+      //   margin: 0 auto;
+      //   margin-top: 291px;
+      //   margin-bottom: 291px;
+      //   border-radius: 10px;
+      //   background: #fff;
+      //   box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.1);
+      //   .login_items {
+      //     .login_items_title {
+      //       text-align: center;
+      //       padding-top: 77px;
 
-            h3 {
-              font-size: 32px;
-            }
-          }
+      //       h3 {
+      //         font-size: 32px;
+      //       }
+      //     }
 
-          .formLogin {
-            display: flex;
-            flex-direction: column;
-            margin: 66px 0px 0px 0px;
-            label {
-              color: var(--dark, #1c2434);
-              font-family: Inter;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 24px;
-            }
+      //     .formLogin {
+      //       display: flex;
+      //       flex-direction: column;
+      //       margin: 66px 0px 0px 0px;
+      //       label {
+      //         color: var(--dark, #1c2434);
+      //         font-family: Inter;
+      //         font-size: 16px;
+      //         font-style: normal;
+      //         font-weight: 400;
+      //         line-height: 24px;
+      //       }
 
-            .parol {
-              margin-top: 36px;
-            }
+      //       .parol {
+      //         margin-top: 36px;
+      //       }
 
-            .email {
-              display: flex;
-              align-items: center;
-              border-radius: 8px;
-              margin-top: 18px;
-              border: 1px solid var(--stroke, #e2e8f0);
-              background: var(--white, #fff);
-              input {
-                width: 100%;
-                padding: 24px 33px;
-                color: var(--text-color, #64748b);
-                font-family: Inter;
-                font-size: 24px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 24px;
-                border: none;
+      //       .email {
+      //         display: flex;
+      //         align-items: center;
+      //         border-radius: 8px;
+      //         margin-top: 18px;
+      //         border: 1px solid var(--stroke, #e2e8f0);
+      //         background: var(--white, #fff);
+      //         input {
+      //           width: 100%;
+      //           padding: 24px 33px;
+      //           color: var(--text-color, #64748b);
+      //           font-family: Inter;
+      //           font-size: 24px;
+      //           font-style: normal;
+      //           font-weight: 400;
+      //           line-height: 24px;
+      //           border: none;
 
-                span {
-                  img {
-                    top: 0;
-                  }
-                }
-              }
-            }
+      //           span {
+      //             img {
+      //               top: 0;
+      //             }
+      //           }
+      //         }
+      //       }
 
-            .btn {
-              margin-top: 161px;
-              margin: 161px auto;
-              margin-bottom: 128px;
-              button {
-                background: transparent;
-                padding: 18px 121px;
-                border-radius: 30px;
-                border: 2px solid #c77128;
-                color: #c77128;
-                text-align: center;
-                font-family: Inter;
-                font-size: 18px;
-                font-weight: 400;
-              }
-            }
-          }
-        }
-      }
+      //       .btn {
+      //         margin-top: 161px;
+      //         margin: 161px auto;
+      //         margin-bottom: 128px;
+      //         button {
+      //           background: transparent;
+      //           padding: 18px 121px;
+      //           border-radius: 30px;
+      //           border: 2px solid #c77128;
+      //           color: #c77128;
+      //           text-align: center;
+      //           font-family: Inter;
+      //           font-size: 18px;
+      //           font-weight: 400;
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
 
       .productAdd {
-        // position: fixed;
-        // top: -200%;
         width: 95%;
         padding: 0px 82px;
         margin: 0 auto;

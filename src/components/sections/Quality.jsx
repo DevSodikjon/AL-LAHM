@@ -3,22 +3,18 @@ import "../../assets/style/quality.scss";
 import paper from "../../assets/images/paper_copy.png";
 import meat_ from "../../assets/images/meat_.png";
 import spoon from "../../assets/images/spoon_copy.png";
+import { useTranslation } from "react-i18next";
 
 const Quality = () => {
+  const { t } = useTranslation();
   return (
-    <div className="quality" >
+    <div className="quality">
       <div className="bg">
         <div className="container">
           <div className="quality_items">
             <div className="quality_items_content">
-              <h3>Mahsulotlarimiz sifati</h3>
-              <p>
-                O‘zbekistondagi zamonaviy korxonada yuqori sifatli kolbasa va
-                go‘shtli delikates mahsulotlari ishlab chiqarilmoqda. <br />{" "}
-                Go'sht mahsulotlarini ishlab chiqarish uchun faqat sog'lom
-                hayvonlar va qushlarning go'shti tegishli tekshiruvdan va
-                veterinarning ruxsatidan so'ng ishlatiladi.
-              </p>
+              <h3>{t("qualityTitle")}</h3>
+              <p>{t("qualityDesc")}</p>
             </div>
 
             <div className="quality_items_images">
@@ -35,11 +31,8 @@ const Quality = () => {
 
             <div className="quality_items_delivery" id="quality">
               <div className="title">
-                <h4>Yetkazib berish xizmati</h4>
-                <p>
-                  O’zbekiston bo’ylab barcha viloyatlarga tez yetkazib berish
-                  xizmati mavjud
-                </p>
+                <h4>{t("deliveryTitle")}</h4>
+                <p>{t("deliveryDesc")}</p>
               </div>
             </div>
           </div>

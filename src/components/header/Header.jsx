@@ -9,11 +9,16 @@ import moon from "../../assets/images/moon.svg";
 import burger from "../../assets/images/burger.svg";
 import close from "../../assets/images/Close.svg";
 import "../header/header.scss";
+// import { useTranslation } from "react-i18next";
+import i18n from "../../i18n.js";
 
 const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [active, setActive] = useState(false);
 
+  const handleChangeLanguage = (language) => {
+    i18n.changeLanguage(language.target.value);
+  };
   // Dark Mode \\
 
   const darkFunc = () => {
@@ -45,7 +50,7 @@ const Header = () => {
               <div className="tel_">
                 <NavLink className="tel">
                   <PiPhoneFill className="iconPhone" />
-                  <p className="tel_number">+(000)000 000</p>
+                  <p className="tel_number">+998905807000</p>
                 </NavLink>
                 <div className="hr"></div>
                 <div className="checkbox">
@@ -70,10 +75,25 @@ const Header = () => {
 
                   <div className="lang_box">
                     <div className="select-container">
-                      <select>
-                        <option value="0">Uzb</option>
-                        <option value="1">Rus</option>
-                        <option value="1">Eng</option>
+                      <select onChange={handleChangeLanguage}>
+                        <option
+                          // onClick={() => handleChangeLanguage("uz")}
+                          value="uz"
+                        >
+                          Uzb
+                        </option>
+                        <option
+                          // onClick={() => handleChangeLanguage("ru")}
+                          value="ru"
+                        >
+                          Rus
+                        </option>
+                        <option
+                          // onClick={() => handleChangeLanguage("en")}
+                          value="en"
+                        >
+                          Eng
+                        </option>
                       </select>
                     </div>
                   </div>
@@ -125,10 +145,10 @@ const Header = () => {
 
             <div className="lang_box">
               <div className="select-container">
-                <select>
-                  <option value="0">Uzb</option>
-                  <option value="1">Rus</option>
-                  <option value="1">Eng</option>
+                <select onChange={handleChangeLanguage}>
+                  <option value="uz">Uzb</option>
+                  <option value="ru">Rus</option>
+                  <option value="en">Eng</option>
                 </select>
               </div>
             </div>

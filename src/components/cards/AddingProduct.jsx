@@ -1,6 +1,6 @@
 import React from "react";
 import add from "../../assets/images/plus.svg";
-
+import { Link } from "react-router-dom";
 const AddingProduct = () => {
   return (
     <div>
@@ -11,9 +11,14 @@ const AddingProduct = () => {
           </div>
 
           <div className="add">
-            <img src={add} alt="add" />
+            <Link to="/login">
+              <img src={add} alt="add" />
+            </Link>
           </div>
+
+
         </div>
+
       </div>
     </div>
   );

@@ -1,0 +1,573 @@
+// Kaisei Opti \\
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@700&display=swap");
+
+// Inter \\
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.tahrirlash {
+  background: url("../../assets/images/tahrirlash_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  //   background: rgba(0, 0, 0, 0.074);
+  .tahrirlash_items {
+    background: url("../../assets/images/bg_grey.png");
+    // padding-top: 303px;
+    padding-bottom: 291px;
+    .modals {
+      .title {
+        text-align: center;
+        padding: 159px 0px 110px;
+        h3 {
+          color: #000 !important;
+          font-family: Inter;
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+      }
+
+      .productAdd {
+        width: 1353px;
+        padding: 0px 82px;
+        margin: 0 auto;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.1);
+        .productAdd_items {
+          .productAdd_items_title {
+            text-align: center;
+            padding-top: 171px;
+            h3 {
+              color: #000;
+              font-family: Inter;
+              font-size: 36px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+            }
+          }
+
+          .formLogin {
+            display: flex;
+            flex-direction: column;
+            margin: 66px 0px 0px 0px;
+            label {
+              color: var(--dark, #1c2434);
+              font-family: Inter;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 24px;
+            }
+
+            .parol {
+              margin-top: 88px;
+            }
+
+            .email {
+              display: flex;
+              align-items: center;
+              border-radius: 8px;
+              margin-top: 18px;
+              border: 1px solid var(--stroke, #e2e8f0);
+              background: var(--white, #fff);
+              input {
+                width: 100%;
+                padding: 31px 37px 32px 46px;
+                color: var(--text-color, #64748b);
+                font-family: Inter;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                border: none;
+
+                span {
+                  img {
+                    top: 0;
+                  }
+                }
+              }
+
+              .star-img {
+                padding: 31px 37px 32px 46px;
+                img {
+                  color: #000;
+                }
+              }
+            }
+
+            .izoh {
+              display: flex;
+              flex-direction: column;
+              label {
+                margin: 88px 0px 19px 0px;
+                color: var(--dark, #1c2434);
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+              }
+              textarea {
+                padding: 38px 49px;
+                border: 1px solid var(--stroke, #e2e8f0);
+                resize: none;
+                border-radius: 8px;
+                font-family: Inter;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              }
+            }
+
+            .btn {
+              margin-top: 161px;
+              margin: 161px auto;
+              margin-bottom: 128px;
+              display: flex;
+              align-items: center;
+              gap: 198px;
+              button {
+                background: transparent;
+                padding: 18px 121px;
+                border-radius: 30px;
+                border: 2px solid #c77128;
+                color: #c77128;
+                text-align: center;
+                font-family: Inter;
+                font-size: 18px;
+                font-weight: 400;
+                transition: all 0.7s ease-in-out;
+              }
+
+              button:hover {
+                background: #c77128;
+                color: #fff;
+                transition: all 0.7s ease-in-out;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .tahrirlash_items_cardAdd {
+      margin-top: 94px;
+      .tahrirlash_items_cardAdd_title {
+        h3 {
+          color: #000;
+          text-align: center;
+          font-family: Inter;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+
+      .card_group {
+        margin-top: 90px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 45px;
+        .card {
+          width: 380.571px;
+          border-radius: 10px;
+          background: #232227;
+
+          &_items {
+            &_content {
+              // padding: 30px 16px 61px 19px;
+              padding: 12px 11px 29px 11px;
+              &_title {
+                h3 {
+                  color: #fff;
+                  font-family: Inter;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: normal;
+                }
+              }
+              hr {
+                display: none;
+              }
+              .card_items_products_items {
+                margin-top: 47px;
+                display: flex;
+                justify-content: space-between;
+                .kilo {
+                  color: #fff;
+                  font-family: Inter;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                }
+                .price {
+                  color: #f49340;
+                  font-family: Inter;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .active {
+      top: -200px;
+      right: 0px;
+      left: 0px;
+      transition: all 1s ease;
+    }
+  }
+}
+
+.tahrirlashNew {
+  .modals {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tahrirlash {
+    .tahrirlash_items {
+      .modals {
+        // margin-top: 79px;
+        .title {
+          text-align: center;
+          padding: 77px 0px 21px;
+          h3 {
+            font-size: 32px;
+          }
+        }
+        .productAdd {
+          width: 95%;
+          padding: 0px 82px;
+          .productAdd_items {
+            .productAdd_items_title {
+              text-align: center;
+              padding-top: 171px;
+              h3 {
+                color: #000;
+                font-family: Inter;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+              }
+            }
+
+            .formLogin {
+              display: flex;
+              flex-direction: column;
+              margin: 66px 0px 0px 0px;
+              label {
+                color: var(--dark, #1c2434);
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+              }
+
+              .parol {
+                margin-top: 88px;
+              }
+
+              .email {
+                display: flex;
+                align-items: center;
+                border-radius: 8px;
+                margin-top: 18px;
+                border: 1px solid var(--stroke, #e2e8f0);
+                background: var(--white, #fff);
+                input {
+                  width: 100%;
+                  padding: 31px 37px 32px 46px;
+                  color: var(--text-color, #64748b);
+                  font-family: Inter;
+                  font-size: 24px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 24px;
+                  border: none;
+
+                  span {
+                    img {
+                      top: 0;
+                    }
+                  }
+                }
+
+                .star-img {
+                  padding: 31px 37px 32px 46px;
+                  img {
+                    color: #000;
+                  }
+                }
+              }
+
+              .izoh {
+                display: flex;
+                flex-direction: column;
+                label {
+                  margin: 88px 0px 19px 0px;
+                  color: var(--dark, #1c2434);
+                  font-family: Inter;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 24px;
+                }
+                textarea {
+                  padding: 38px 49px;
+                  border: 1px solid var(--stroke, #e2e8f0);
+                  resize: none;
+                  border-radius: 8px;
+                  font-family: Inter;
+                  font-size: 24px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                }
+              }
+
+              .btn {
+                flex-direction: column;
+                gap: 10px;
+                button {
+                  background: transparent;
+                  padding: 18px 121px;
+                  border-radius: 30px;
+                  border: 2px solid #c77128;
+                  color: #c77128;
+                  text-align: center;
+                  font-family: Inter;
+                  font-size: 18px;
+                  font-weight: 400;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .tahrirlash_items_cardAdd {
+        margin-top: 94px;
+        .tahrirlash_items_cardAdd_title {
+          h3 {
+            color: #000;
+            text-align: center;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+        }
+
+        .card_group {
+          margin-top: 90px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 30px;
+          .card {
+            width: 211px;
+            border-radius: 10px;
+            background: #232227;
+
+            &_items {
+              &_image {
+                img {
+                  width: 100%;
+                }
+              }
+              .card_items_content {
+                padding: 12px 11px 29px 11px;
+                .card_items_title {
+                  h3 {
+                    color: #fff;
+                    font-family: Inter;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                  }
+                }
+                hr {
+                  display: none;
+                }
+                .card_items_products_items {
+                  margin-top: 47px;
+                  display: flex;
+                  justify-content: space-between;
+                  .kilo {
+                    font-size: 10px;
+                  }
+                  .price {
+                    font-size: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .tahrirlash {
+    .tahrirlash_items {
+      .modals {
+        .title {
+          text-align: center;
+          padding: 77px 0px 21px;
+          h3 {
+            font-size: 20px;
+          }
+        }
+        .productAdd {
+          padding: 0px 25px;
+          margin-bottom: 291px;
+          .productAdd_items {
+            .productAdd_items_title {
+              text-align: center;
+              padding-top: 19px;
+              h3 {
+                font-size: 20px;
+              }
+            }
+
+            .formLogin {
+              margin: 39px 0px 0px 0px;
+              label {
+                font-size: 10px;
+              }
+
+              .parol {
+                margin-top: 24px;
+              }
+
+              .email {
+                display: flex;
+                align-items: center;
+                margin-top: 8px;
+                input {
+                  width: 100%;
+                  padding: 6px 16px;
+                  font-size: 14px;
+
+                  span {
+                    img {
+                      top: 0;
+                    }
+                  }
+                }
+
+                .star-img {
+                  padding: 10px 16px;
+                  width: 100px;
+                  display: flex;
+                  align-items: center;
+                  img {
+                    color: #000;
+                    width: 100%;
+                  }
+                }
+              }
+
+              .izoh {
+                display: flex;
+                flex-direction: column;
+                label {
+                  font-size: 10px;
+                }
+                textarea {
+                  padding: 14px 8px;
+                  font-size: 14px;
+                }
+              }
+
+              .btn {
+                margin-top: 40px !important;
+                margin: 161px auto;
+                margin-bottom: 236px;
+                button {
+                  padding: 14px 71px;
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .tahrirlash_items_cardAdd {
+        margin-top: 94px;
+     
+
+        .card_group {
+          margin-top: 90px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 30px;
+          .card {
+            width: 211px;
+            border-radius: 10px;
+            background: #232227;
+
+            &_items {
+              &_image {
+                img {
+                  width: 100%;
+                }
+              }
+              .card_items_content {
+                padding: 12px 11px 29px 11px;
+                .card_items_title {
+                  h3 {
+                    color: #fff;
+                    font-family: Inter;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                  }
+                }
+                hr {
+                  display: none;
+                }
+                .card_items_products_items {
+                  margin-top: 47px;
+                  display: flex;
+                  justify-content: space-between;
+                  .kilo {
+                    font-size: 10px;
+                  }
+                  .price {
+                    font-size: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

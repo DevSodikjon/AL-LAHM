@@ -1,16 +1,20 @@
 import React from "react";
 import add from "../../assets/images/plus.svg";
-const AddingAccCard = () => {
+import { Link } from "react-router-dom";
+const AddingAccCard = (props) => {
+  const { modal } = props;
   return (
     <div>
-      <div className="cards">
+      <div className="cards" onClick={modal}>
         <div className="cards_items">
           <div className="card_items_title">
             <h3>Aksesuar qo’shish</h3>
           </div>
 
           <div className="add">
-            <img src={add} alt="add" />
+            <Link to='/login'>
+              <img src={add} alt="add" />
+            </Link>
           </div>
         </div>
       </div>

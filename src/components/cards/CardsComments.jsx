@@ -1,7 +1,9 @@
 import React from "react";
 import stars from "../../assets/images/stars.png";
 
+
 const CardsComments = () => {
+
   return (
     <div className="card">
       <div className="card_items">

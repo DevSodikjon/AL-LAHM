@@ -1,6 +1,7 @@
 import React from "react";
 import "../../assets/style/comments.scss";
 import CardsComments from "../cards/CardsComments";
+import { useTranslation } from "react-i18next";
 
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
@@ -13,12 +14,14 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const Comments = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="comments">
       <div className="container">
         <div className="comments_items">
           <div className="comments_items_title">
-            <h3>Xaridorlarimiz biz haqimizda fikrlari</h3>
+            <h3>{t("commnentsTitle")}</h3>
           </div>
 
           <div className="card_box">

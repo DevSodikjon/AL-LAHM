@@ -1,26 +1,27 @@
 import React from "react";
-// import { NavLink } from "react-router-dom";
 import "../navbar/navbar.scss";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const { t } = useTranslation();
   return (
     <div className="navbar">
       <ul className="navbar_ul">
         <li>
           {/* <NavLink to={"#aboutUs"} className="NavLink">Asosiy</NavLink> */}
-          <a href="#aboutUs">Asosiy</a>
+          <a href="#aboutUs">{t("main")}</a>
         </li>
         <li>
           {/* <NavLink className="NavLink">Biz haqimizda</NavLink> */}
-          <a href="#aboutUs">Biz haqimizda</a>
+          <a href="#aboutUs">{t("aboutUs")}</a>
         </li>
         <li>
           {/* <NavLink className="NavLink">Mahsulotlar</NavLink> */}
-          <a href="#products">Mahsulotlar</a>
+          <a href="#products">{t("products")}</a>
         </li>
         <li>
           {/* <NavLink className="NavLink">Yetkazib berish </NavLink> */}
-          <a href="#quality">Yetkazib berish</a>
+          <a href="#quality">{t("delivery")}</a>
         </li>
       </ul>
     </div>

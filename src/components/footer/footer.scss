@@ -12,8 +12,9 @@ footer {
     padding-bottom: 85px;
     .nav {
       margin-top: 66px;
+      width: 100%;
       display: flex;
-      gap: 248px;
+      justify-content: space-between;
 
       .tels {
         margin-top: -20px;

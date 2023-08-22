@@ -7,9 +7,16 @@ import { BiSolidHomeAlt2 } from "react-icons/bi";
 import { FiInstagram } from "react-icons/fi";
 import { PiPhoneFill } from "react-icons/pi";
 import { FaTwitter } from "react-icons/fa";
-import logoFooter from "../../assets/images/footer_logo.png"
+import { FaFacebookF } from "react-icons/fa";
+import logoFooter from "../../assets/images/footer_logo.png";
 import "../footer/footer.scss";
+import i18n from "../../i18n.js";
+import { useTranslation } from "react-i18next";
 const Footer = () => {
+  const { t } = useTranslation();
+  const handleChangeLanguage = (language) => {
+    i18n.changeLanguage(language.target.value);
+  };
   return (
     <div>
       <footer>
@@ -26,37 +33,40 @@ const Footer = () => {
                 <div className="tel_s">
                   <NavLink className="telss">
                     <PiPhoneFill className="iconPhones" />
-                    <p className="tel_numbers">+(000)000 000</p>
+                    <p className="tel_numbers">+998905807000</p>
                   </NavLink>
                 </div>
                 <div className="tel_s">
                   <NavLink className="telss">
                     <PiPhoneFill className="iconPhones" />
-                    <p className="tel_numbers">+(000)000 000</p>
+                    <p className="tel_numbers">+998905807000</p>
                   </NavLink>
                 </div>
                 <div className="lang_box">
-                  <div className="select-container">
+                  <div
+                    className="select-container"
+                    onChange={handleChangeLanguage}
+                  >
                     <select>
-                      <option value="0">Uzb</option>
-                      <option value="1">Rus</option>
-                      <option value="1">Eng</option>
+                      <option value="uz">Uzb</option>
+                      <option value="ru">Rus</option>
+                      <option value="en">Eng</option>
                     </select>
                   </div>
                 </div>
                 <div className="auth">
-                  <p>Sayt yaratuvchisi:</p>
+                  <p>{t('footerCreator')}</p>
                   <img src={primeTech} alt="logo" />
                 </div>
               </div>
             </div>
           </div>
           <div className="icons_social">
-            <p>Bizni kuzating</p>
+            <p>{t('footerBizniKuzating')}</p>
             <div className="box">
               <div className="social-container">
                 <Link className="Link_icon">
-                  <BiSolidHomeAlt2 className="social" />
+                  <FaFacebookF className="social" />
                 </Link>
               </div>
               <div className="social-container">
@@ -82,21 +92,25 @@ const Footer = () => {
               <p>Al lahm</p>
             </div>
 
+            <div className="nav-box">
+              
+            </div>
+
             <div className="navbar">
-              <ul>
-                <li>
-                  <a href="#aboutUs">Asosiy</a>
-                </li>
-                <li>
-                  <a href="#aboutUs">Biz haqimizda</a>
-                </li>
-                <li>
-                  <a href="#products">Mahsulotlar</a>
-                </li>
-                <li>
-                  <a href="#quality">Yetkazib berish</a>
-                </li>
-              </ul>
+            <ul>
+              <li>
+                <a href="#aboutUs">{t("main")}</a>
+              </li>
+              <li>
+                <a href="#aboutUs">{t("aboutUs")}</a>
+              </li>
+              <li>
+                <a href="#products">{t("products")}</a>
+              </li>
+              <li>
+                <a href="#quality">{t("delivery")}</a>
+              </li>
+            </ul>
             </div>
 
             <div className="tel_number">
@@ -112,7 +126,7 @@ const Footer = () => {
 
             <div className="social_box">
               <div className="text">
-                <p>Bizni kuzating</p>
+                <p>{t('footerBizniKuzating')}</p>
               </div>
 
               <div className="icons">
@@ -135,7 +149,7 @@ const Footer = () => {
             </div>
 
             <div className="auth">
-              <p>Sayt yaratuvchisi:</p>
+              <p>{t('footerCreator')}</p>
               <img src={logoFooter} alt="logoFooter" />
             </div>
           </div>

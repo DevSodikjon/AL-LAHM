@@ -6,10 +6,18 @@ import { PiPhoneFill } from "react-icons/pi";
 import { NavLink } from "react-router-dom";
 import sun from "../../assets/images/sun-line.svg";
 import moon from "../../assets/images/moon.svg";
+import close from "../../assets/images/Close.svg";
+import i18n from "../../i18n.js";
+import { useTranslation } from "react-i18next";
 
 const HeaderMobile = () => {
   const [active, setActive] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const handleChangeLanguage = (language) => {
+    i18n.changeLanguage(language.target.value);
+  };
+
+  const { t } = useTranslation();
 
   const darkFunc = () => {
     setIsDarkMode(false);
@@ -45,6 +53,9 @@ const HeaderMobile = () => {
       </div>
 
       <div className={`modalPhone ${active ? "active" : ""}`}>
+        <div className="close_box">
+          <img src={close} onClick={openModal} alt="close" />
+        </div>
         <div className="modalPhone_items">
           <div className="logo">
             <img src={logo} alt="logo" />
@@ -53,16 +64,16 @@ const HeaderMobile = () => {
           <div className="navbar">
             <ul>
               <li>
-                <a href="#aboutUs">Asosiy</a>
+                <a href="#aboutUs">{t("main")}</a>
               </li>
               <li>
-                <a href="#aboutUs">Biz haqimizda</a>
+                <a href="#aboutUs">{t("aboutUs")}</a>
               </li>
               <li>
-                <a href="#products">Mahsulotlar</a>
+                <a href="#products">{t("products")}</a>
               </li>
               <li>
-                <a href="#quality">Yetkazib berish</a>
+                <a href="#quality">{t("delivery")}</a>
               </li>
             </ul>
           </div>
@@ -86,11 +97,11 @@ const HeaderMobile = () => {
             </div>
 
             <div className="lang_box">
-              <div className="select-container">
+              <div className="select-container" onClick={handleChangeLanguage}>
                 <select>
-                  <option value="0">Uzb</option>
-                  <option value="1">Rus</option>
-                  <option value="1">Eng</option>
+                  <option value="uz">Uzb</option>
+                  <option value="ru">Rus</option>
+                  <option value="en">Eng</option>
                 </select>
               </div>
             </div>

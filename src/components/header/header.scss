@@ -79,7 +79,12 @@ header {
 
             .lightIcon {
               font-size: 20px;
-              color: #f49340 !important;
+              // color: #;
+            }
+
+            svg {
+              font-size: 20px;
+              color: #fff !important;
             }
           }
 
@@ -90,7 +95,7 @@ header {
             border-radius: 20px;
             .moonIcon {
               font-size: 20px;
-              color: #f49340 !important;
+              // color: #f49340 !important;
             }
           }
 
@@ -105,6 +110,11 @@ header {
             background: #f49340;
             transition: all 0.3s ease-in-out;
             .lightIcon {
+              font-size: 20px;
+              color: #fff;
+            }
+
+            svg {
               font-size: 20px;
               color: #fff;
             }
@@ -143,15 +153,13 @@ header {
   }
 }
 
-.mobilHeader{
+.mobilHeader {
   display: none;
 }
 
-.modalPhone{
+.modalPhone {
   display: none;
 }
-
-
 
 .modal {
   display: none;
@@ -345,15 +353,153 @@ header {
   }
   .mobilHeader {
     display: grid;
+
     .mobilHeader_items {
       display: flex;
       align-items: center;
       justify-content: space-between;
       margin-top: 10px;
+
+      .mobilHeader_items_burger_icon_box {
+        img:hover {
+          cursor: pointer;
+        }
+      }
       .mobileHeader_items_logo {
         width: 72px;
         img {
           width: 100%;
+        }
+      }
+    }
+  }
+
+  .modal {
+    display: block;
+    position: fixed;
+    top: 12%;
+    right: -100%;
+    transition: all 0.6s ease-in-out;
+    padding: 22px 20px 233px 60px;
+    width: 321px;
+    background: #f49340;
+    .modal_items {
+      .close_box {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 35px;
+        .darkmode {
+          .darkmode_border {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 95px;
+            height: 38px;
+            padding: 4px;
+            border-radius: 500px;
+            border: 1px solid #ffff;
+            transition: all 0.3s ease-in-out;
+
+            .lightIcon_box {
+              width: 45px;
+              height: 30px;
+              padding: 4px 12px;
+              border-radius: 20px;
+              .lightIcon {
+                font-size: 20px;
+                color: #f49340;
+              }
+            }
+
+            .moonIcon_box {
+              width: 42px;
+              height: 30px;
+              padding: 4px 12px;
+              border-radius: 20px;
+              .moonIcon {
+                font-size: 20px;
+                color: #fff;
+              }
+            }
+
+            .lightIcon_box:hover {
+              cursor: pointer;
+            }
+            .moonIcon_box:hover {
+              cursor: pointer;
+            }
+
+            .light {
+              background: #fff;
+              transition: all 0.3s ease-in-out;
+              .lightIcon {
+                font-size: 20px;
+                color: #f49340;
+              }
+              .moonIcon {
+                font-size: 20px;
+                color: #f49340;
+              }
+            }
+          }
+        }
+
+        .lang_box {
+          .select-container {
+            select {
+              width: 96px;
+              padding: 3px 13px 3px 9px;
+              background: transparent;
+              color: #fff;
+              font-family: Inter;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              border-radius: 27px;
+              border: 1px solid #fff;
+
+              option {
+                color: #fff;
+                background: #f49340;
+                border: none;
+              }
+            }
+          }
+        }
+      }
+
+      .tel {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        text-decoration: none;
+        margin-top: 34px;
+
+        .iconPhone {
+          transform: rotateY(180deg);
+          color: #f49340;
+          font-size: 35px;
+        }
+        .tel_number {
+          color: #fff;
+          font-family: Inter;
+          font-size: 26px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          transition: all 0.3s ease-in-out;
+        }
+
+        .tel_number:hover {
+          transition: all 0.3s ease-in-out;
+          color: #4b4646b3;
         }
       }
     }
@@ -363,9 +509,16 @@ header {
     background: #f49340;
     transition: all 0.6s ease-in-out;
     position: fixed;
-    top: -120%;
+    top: -1200px;
     left: 0;
     width: 360px;
+    .close_box {
+      padding: 30px;
+      img {
+        display: flex;
+        float: right;
+      }
+    }
     .modalPhone_items {
       padding: 0px 37px;
       .logo {
@@ -513,7 +666,7 @@ header {
   }
 
   .active {
-    top: 90px;
+    top: 0px;
     transition: all 0.6s ease-in-out;
   }
 }

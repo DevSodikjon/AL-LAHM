@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Hero from "../sections/Hero";
 import AboutUs from "../sections/AboutUs";
 import Choice from "../sections/Choice";
@@ -7,7 +7,7 @@ import Acc from "../sections/Acc";
 import Quality from "../sections/Quality";
 import Comments from "../sections/Comments";
 import Connection from "../sections/Connection";
-
+import axios from "axios";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 

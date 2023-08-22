@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../../assets/style/products.scss";
 import CardsProducts from "../cards/CardsProducts";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
@@ -20,13 +21,15 @@ const Products = () => {
     setMaxWidth(window.innerWidth);
   }, [window.innerWidth]);
 
+  const { t } = useTranslation();
+
   return (
     <div>
       <div className="products" id="products">
         <div className="container">
           <div className="products_items">
             <div className="products_items_title">
-              <h3>Mahsulotlarimiz</h3>
+              <h3>{t('productsTitle')}</h3>
             </div>
 
             <div className="card_box">
@@ -40,7 +43,7 @@ const Products = () => {
                   pagination={{ clickable: true }}
                   scrollbar={{ draggable: true }}
                   onSwiper={(swiper) => console.log(swiper)}
-                  onSlideChange={() => console.log("slide change")}
+                  onSlideChange={() => console.log()}
                 >
                   <SwiperSlide>
                     <CardsProducts />
@@ -117,6 +120,10 @@ const Products = () => {
                 </Swiper>
               </Link>
             </div>
+          </div>
+
+          <div className="products_cards">
+            {/* <div className="title">sdsdsdsd</div> */}
           </div>
         </div>
       </div>

@@ -1,8 +1,9 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import "../../assets/style/hero.scss";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <div className="hero">
@@ -11,20 +12,18 @@ const Hero = () => {
             <div className="hero_items_content">
               <div className="hero_items_content_title">
                 <h2>
-                  Haqiqiy <span>ta’am</span> va lazzatni his eting!
+                  {t(`titlePartOne`)} <span>{t("span")} </span>
+                  {t("titlePartwo")}
                 </h2>
-                <p>
-                  Sifatli go’sht, kolbasa va yarim <br /> tayyor go’sht
-                  mahsulotlari
-                </p>
+                <p>{t("herodesc")}</p>
               </div>
               <div className="hero_items_content_btn">
-                <NavLink className="menu_btn">Menuni ko'rish</NavLink>
+                <a href="#products" className="menu_btn">
+                  {t("heroBtn")}
+                </a>
               </div>
               <div className="text">
-                <p>
-                  Sifatli go’sht, kolbasa va yarim tayyor go’sht mahsulotlari
-                </p>
+                <p>{t("herodesc")}</p>
               </div>
             </div>
           </div>
